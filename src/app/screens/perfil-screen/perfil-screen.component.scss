@@ -13,8 +13,22 @@
     padding-left: 400px;
 }
 
+.body-perfil-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
 .header-img{
     width: 63%;
+    height: 100%;
+}
+
+.header-img-mobile{
+    width: 94%;
     height: 100%;
 }
 

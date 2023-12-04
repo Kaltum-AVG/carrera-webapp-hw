@@ -7,7 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class HeaderAppComponent implements OnInit {
   @Output() drawer = new EventEmitter();
-
+  
   constructor() { }
 
   ngOnInit(): void {

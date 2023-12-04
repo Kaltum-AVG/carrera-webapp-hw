@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HomeScreenComponent implements OnInit {
 
-  public name_user: string = "Nelson Ricardo Sosa Francisco";
+  public name_user: string = "Kaltum Viveros";
   public isLoading: boolean = false;
   //Form dinámico de campos de texto
   public inputsCodigo : FormGroup;
