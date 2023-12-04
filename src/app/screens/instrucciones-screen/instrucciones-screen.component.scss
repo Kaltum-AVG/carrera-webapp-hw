@@ -1,0 +1,140 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.body-instrucciones{
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+    overflow-y: scroll!important;
+    //overflow-x: hidden!important;
+}
+
+.auxiliar{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.body-instrucciones-desk{
+    width: 65%;
+    height: 138vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    //overflow-y: scroll!important;
+    //overflow-x: hidden!important;
+}
+
+.sangria-desk{
+    padding-left: 70PX;
+}
+
+.sangria{
+    width: 90%;
+}
+
+.centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+    align-items: center;
+}
+
+.eslogan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    // max-width: 40%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2rem;
+}
+
+.line-color{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 5%;
+}
+
+.vertical-line{
+    width: 5px; /* Line width */
+    background-color: #CD0000; /* Line color */
+    height: 40px!important; /* Override in-line if you want specific height. */
+    float: left;
+}
+
+.title-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    //Fuente
+    text-align: left;
+    font-family: Avenir-Bold;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.txt-bold-mobil{
+    padding-left: 10px!important;
+    padding-top: 3rem!important;
+    font-family: Avenir-Bold;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.txt-normal-mobil{
+    width: 100%;
+    padding-left: 30px!important;
+    padding-top: 15px!important;    
+    font-family: Avenir;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.line-tabla{
+    padding-top: 10px;
+    padding-left: 40px!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.horizontal-line{
+    background-color: #d3d3d3; /* Line color */
+    height: 1px!important; /* Override in-line if you want specific height. */
+    float: left;
+}
+
+.txt-same-line{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-jugar{
+    width: 200px;
+    height: 50px;
+}

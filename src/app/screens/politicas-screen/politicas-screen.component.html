@@ -1,0 +1,88 @@
+<section class="bases-promocion">
+    <ng-container *ngIf="isMobile(); else isDesktop">
+        <div class="wrapper">
+            <mat-drawer-container>
+                <mat-drawer #drawer mode='over' position="start">
+                    <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+                </mat-drawer>
+                <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+                <div class="body">
+
+                    <div class="section-title">
+                        <div class="line-color">
+                            <div class="vertical-line" style="height: 111px;"></div>
+                        </div>
+                        <div class="title-link">
+                            <span>POLÍTICA DE PRIVACIDAD</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="txt-normal-mobil">
+                    <span>Gracias por elegir "Motor Rider". En esta política de privacidad, describimos cómo recopilamos, utilizamos y protegemos la información personal que puedas proporcionarnos al jugar a nuestro videojuego "Motor Rider". Tu privacidad es importante para nosotros, y nos comprometemos a protegerla.<br><br>
+                        Información del Usuario: Al registrarte en "Motor Rider", recopilamos tu nombre de usuario, dirección de correo electrónico y otra información que elijas proporcionar para personalizar tu experiencia en el juego.<br><br>
+                        Datos del Dispositivo: Recopilamos información sobre tu dispositivo, como el modelo, sistema operativo, identificadores únicos y configuraciones de hardware, para mejorar la compatibilidad y la experiencia de juego.
+                        Datos de Juego: Registraremos tu progreso en el juego, estadísticas de juego, logros y cualquier otra información relacionada con tu actividad en "Motor Rider".
+                        Personalización: Utilizamos la información recopilada para personalizar tu experiencia de juego, proporcionando contenido relevante, mejoras y recomendaciones adaptadas a tus preferencias.<br><br>
+                        Desarrollo del Juego: Analizamos datos agregados para mejorar la calidad del juego, corregir errores, y desarrollar nuevas características y contenidos que se alineen con las expectativas de nuestros usuarios.
+                        Comunicación: Podemos utilizar tu dirección de correo electrónico para enviar actualizaciones, anuncios, y otras comunicaciones relacionadas con "Motor Rider". Puedes optar por no recibir estas comunicaciones en cualquier momento.
+                        No compartimos tu información personal con terceros sin tu consentimiento, excepto cuando sea necesario para proporcionar servicios relacionados con "Motor Rider". Por ejemplo, podríamos compartir datos con proveedores de servicios externos que nos ayuden a gestionar el juego.<br><br>
+                        Tomamos medidas razonables para proteger tu información personal contra pérdida, acceso no autorizado, divulgación, alteración o destrucción. Utilizamos protocolos de seguridad estándar de la industria y actualizamos continuamente nuestras prácticas para mantener la integridad y confidencialidad de tus datos.</span><br><br><br><br>
+                </div>
+
+
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+                
+            </mat-drawer-container>
+            <!-- Se cierra el sidebar -->
+        </div>
+    </ng-container>
+
+    <ng-template #isDesktop>
+        <div class="wrapper">
+            <mat-drawer-container>
+                <mat-drawer #drawer mode='over' position="start">
+                    <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+                </mat-drawer>
+                <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+                <div class="body-desk">
+
+                    <div class="section-title">
+                        <div class="line-color">
+                            <div class="vertical-line" style="height: 111px;"></div>
+                        </div>
+                        <div class="title-link">
+                            <span>POLÍTICA DE PRIVACIDAD</span>
+                        </div>
+                    </div>
+
+                    <div class="txt-normal-mobil">
+                        <span>Gracias por elegir "Motor Rider". En esta política de privacidad, describimos cómo recopilamos, utilizamos y protegemos la información personal que puedas proporcionarnos al jugar a nuestro videojuego "Motor Rider". Tu privacidad es importante para nosotros, y nos comprometemos a protegerla.<br><br>
+                            Información del Usuario: Al registrarte en "Motor Rider", recopilamos tu nombre de usuario, dirección de correo electrónico y otra información que elijas proporcionar para personalizar tu experiencia en el juego.<br><br>
+                            Datos del Dispositivo: Recopilamos información sobre tu dispositivo, como el modelo, sistema operativo, identificadores únicos y configuraciones de hardware, para mejorar la compatibilidad y la experiencia de juego.
+                            Datos de Juego: Registraremos tu progreso en el juego, estadísticas de juego, logros y cualquier otra información relacionada con tu actividad en "Motor Rider".
+                            Personalización: Utilizamos la información recopilada para personalizar tu experiencia de juego, proporcionando contenido relevante, mejoras y recomendaciones adaptadas a tus preferencias.<br><br>
+                            Desarrollo del Juego: Analizamos datos agregados para mejorar la calidad del juego, corregir errores, y desarrollar nuevas características y contenidos que se alineen con las expectativas de nuestros usuarios.
+                            Comunicación: Podemos utilizar tu dirección de correo electrónico para enviar actualizaciones, anuncios, y otras comunicaciones relacionadas con "Motor Rider". Puedes optar por no recibir estas comunicaciones en cualquier momento.
+                            No compartimos tu información personal con terceros sin tu consentimiento, excepto cuando sea necesario para proporcionar servicios relacionados con "Motor Rider". Por ejemplo, podríamos compartir datos con proveedores de servicios externos que nos ayuden a gestionar el juego.<br><br>
+                            Tomamos medidas razonables para proteger tu información personal contra pérdida, acceso no autorizado, divulgación, alteración o destrucción. Utilizamos protocolos de seguridad estándar de la industria y actualizamos continuamente nuestras prácticas para mantener la integridad y confidencialidad de tus datos.</span><br><br><br><br>
+                    </div>
+
+                </div>
+
+                    
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+                
+            </mat-drawer-container>
+            <!-- Se cierra el sidebar -->
+        </div>
+    </ng-template>
+
+</section>

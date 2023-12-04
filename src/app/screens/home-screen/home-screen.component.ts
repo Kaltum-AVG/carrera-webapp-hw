@@ -7,10 +7,9 @@ import { Router } from '@angular/router';
   templateUrl: './home-screen.component.html',
   styleUrls: ['./home-screen.component.scss']
 })
-
 export class HomeScreenComponent implements OnInit {
 
-  public name_user: string = "Kaltum Abdala";
+  public name_user: string = "Nelson Ricardo Sosa Francisco";
   public isLoading: boolean = false;
   //Form dinámico de campos de texto
   public inputsCodigo : FormGroup;
@@ -47,7 +46,7 @@ export class HomeScreenComponent implements OnInit {
   }
 
   public saberMas(){
-
+    this.router.navigate(["bases-promocion"]);
   }
 
   public obtenerCodigos(){
@@ -86,7 +85,7 @@ export class HomeScreenComponent implements OnInit {
   }
 
   public registrarCodigo(){
-
+    this.router.navigate(["instrucciones"]);
   }
 
   public isMobile(tipo: number){
@@ -105,6 +104,14 @@ export class HomeScreenComponent implements OnInit {
           return "interior-codigos-registrados";
         }
         break;
+    }
+  }
+
+  public itsMobile(){
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent)){
+      return true;
+    }else{
+      return false;
     }
   }
 }

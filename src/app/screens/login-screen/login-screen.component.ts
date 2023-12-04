@@ -16,7 +16,7 @@ export class LoginScreenComponent implements OnInit {
   public inputType_1: string = 'password';
 
   constructor(
-      private router: Router
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -27,11 +27,11 @@ export class LoginScreenComponent implements OnInit {
   }
 
   public recuperarPwd(){
-    this.router.navigate(["juego terminado"]);
+    
   }
 
   public goRegistro(){
-    this.router.navigate(["registro"])
+    this.router.navigate(["registro"]);
   }
   
   showPassword()

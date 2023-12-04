@@ -1,0 +1,62 @@
+<section class="bases-promocion">
+    <ng-container *ngIf="isMobile(); else isDesktop">
+        <div class="wrapper">
+            <mat-drawer-container>
+                <mat-drawer #drawer mode='over' position="start">
+                    <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+                </mat-drawer>
+                <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+                
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+            </mat-drawer-container>
+        </div>
+    </ng-container>
+
+
+    <ng-template #isDesktop>
+        <div class="wrapper">
+            <mat-drawer-container>
+                <mat-drawer #drawer mode='over' position="start">
+                    <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+                </mat-drawer>
+                <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+                <div class="body-perfil">
+
+                    <img src="/assets/images/equipoDinamita.jpg" class="header-img"><br><br><br>
+
+                    <div class="pares">
+                        <span class="texto3">Equipo alfa buena maravilla onda dinamita escuadron lobo</span>
+                    </div><br><br>
+
+                    <div class="pares">
+                        <span class="texto1">Alumno: </span>
+                        <span class="texto2">Nelson Ricardo Sosa Francisco</span>
+                   </div><br><br>
+
+                   <div class="pares">
+                        <span class="texto1">Materia: </span>
+                        <span class="texto2">Herramientas Web</span>
+                   </div><br><br>
+
+                   <div class="pares">
+                        <span class="texto1">Profesor: </span>
+                        <span class="texto2">Luis Yael Méndez Sánchez</span>
+                   </div><br><br>
+
+                   <div class="pares">
+                    <span class="texto1">Periodo: </span>
+                    <span class="texto2">Otoño 2023</span>
+                   </div><br><br>
+
+                </div>
+                
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+            </mat-drawer-container>
+        </div>
+    </ng-template>
+</section>

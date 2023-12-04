@@ -1,0 +1,14 @@
+<section class="bases-promocion">
+    <ng-container *ngIf="isMobile(); else isDesktop">
+
+        <div class="wrapper-mobil" (click)="terminarJuego()" ></div>
+
+    </ng-container>
+
+    <ng-template #isDesktop>
+
+        <div class="wrapper" (click)="terminarJuego()" ></div>
+
+    </ng-template>
+
+</section>

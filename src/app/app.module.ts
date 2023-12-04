@@ -24,6 +24,13 @@ import { HeaderAppComponent } from './partials/header-app/header-app.component';
 import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
 import { JuegoTerminadoScreenComponent } from './screens/juego-terminado-screen/juego-terminado-screen.component';
 import { FooterAppComponent } from './partials/footer-app/footer-app.component';
+import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/bases-promocion-screen.component';
+import { InstruccionesScreenComponent } from './screens/instrucciones-screen/instrucciones-screen.component';
+import { JugandoScreenComponent } from './screens/jugando-screen/jugando-screen.component';
+import { NuevoLookScreenComponent } from './screens/nuevo-look-screen/nuevo-look-screen.component';
+import { PerfilScreenComponent } from './screens/perfil-screen/perfil-screen.component';
+import { PoliticasScreenComponent } from './screens/politicas-screen/politicas-screen.component';
+import { TerminosycondicionesScreenComponent } from './screens/terminosycondiciones-screen/terminosycondiciones-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +40,14 @@ import { FooterAppComponent } from './partials/footer-app/footer-app.component';
     HeaderAppComponent,
     LeftSidebarComponent,
     JuegoTerminadoScreenComponent,
-    FooterAppComponent
+    FooterAppComponent,
+    BasesPromocionScreenComponent,
+    InstruccionesScreenComponent,
+    JugandoScreenComponent,
+    NuevoLookScreenComponent,
+    PerfilScreenComponent,
+    PoliticasScreenComponent,
+    TerminosycondicionesScreenComponent
   ],
   imports: [
     BrowserModule,

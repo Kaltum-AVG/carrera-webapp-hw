@@ -1,0 +1,98 @@
+<section class="bases-promocion">
+    <ng-container *ngIf="isMobile(); else isDesktop">
+        <div class="wrapper">
+            <mat-drawer-container>
+                <mat-drawer #drawer mode='over' position="start">
+                    <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+                </mat-drawer>
+                <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+                <div class="body">
+
+                    <div class="section-title">
+                        <div class="line-color">
+                            <div class="vertical-line" style="height: 111px;"></div>
+                        </div>
+                        <div class="title-link">
+                            <span>TÉRMINOS Y CONDICIONES</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="txt-normal-mobil">
+                    <span>Te damos la bienvenida a "Motor Rider", el emocionante juego de carreras. Al acceder y utilizar nuestro juego, aceptas los siguientes términos y condiciones. Por favor, léelos cuidadosamente antes de jugar.
+                        Licencia Limitada: Concedemos a los usuarios una licencia no exclusiva, intransferible y revocable para utilizar "Motor Rider" de acuerdo con estos términos y condiciones.<br><br>
+                        Restricciones: No puedes copiar, modificar, distribuir, vender, alquilar ni realizar ingeniería inversa sobre "Motor Rider" o cualquier parte de su contenido sin nuestro consentimiento expreso por escrito.
+                        Edad Mínima: Debes tener al menos 13 años para utilizar "Motor Rider". Si eres menor de 13 años, necesitas el consentimiento de tus padres o tutores para jugar.
+                        Conducta Adecuada: No debes participar en conductas que violen la ley, los derechos de propiedad intelectual, la privacidad o estos términos y condiciones mientras utilices "Motor Rider".<br><br>
+                        Propiedad del Contenido: Cualquier contenido que crees mientras utilizas "Motor Rider" sigue siendo tu propiedad, pero nos concedes una licencia para utilizar, mostrar y distribuir dicho contenido en relación con el juego.
+                        Contenido Inapropiado: No puedes cargar, compartir ni crear contenido que sea ilegal, ofensivo, difamatorio, obsceno, amenazante, invasivo de la privacidad o que viole los derechos de propiedad intelectual.
+                        Actualizaciones del Juego: Nos reservamos el derecho de realizar actualizaciones y cambios en "Motor Rider" en cualquier momento sin previo aviso. Estás de acuerdo en instalar dichas actualizaciones para continuar utilizando el juego.<br><br>
+                        Uso bajo tu Propio Riesgo: Utilizas "Motor Rider" bajo tu propio riesgo. No nos hacemos responsables de pérdidas, daños o perjuicios derivados del uso del juego.
+                        Interrupciones y Errores: No garantizamos que "Motor Rider" esté libre de interrupciones, errores o defectos, ni que todos los errores serán corregidos.
+                        Nos reservamos el derecho de suspender o dar por terminado tu acceso a "Motor Rider" en caso de incumplimiento de estos términos y condiciones.<br><br>
+                        Nos reservamos el derecho de actualizar estos términos y condiciones en cualquier momento. Te notificaremos sobre cambios significativos. Al continuar utilizando "Motor Rider" después de dichas modificaciones, aceptas los términos actualizados.
+                        Si tienes preguntas o inquietudes sobre estos términos y condiciones, puedes ponerte en contacto con nosotros en [correo electrónico de contacto].
+                        Gracias por elegir "Motor Rider". ¡Que tengas una experiencia de juego emocionante!</span><br><br><br><br>
+                </div>
+
+
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+                
+            </mat-drawer-container>
+            <!-- Se cierra el sidebar -->
+        </div>
+    </ng-container>
+
+    <ng-template #isDesktop>
+        <div class="wrapper">
+            <mat-drawer-container>
+                <mat-drawer #drawer mode='over' position="start">
+                    <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+                </mat-drawer>
+                <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+                <div class="body-desk">
+
+                    <div class="section-title">
+                        <div class="line-color">
+                            <div class="vertical-line" style="height: 111px;"></div>
+                        </div>
+                        <div class="title-link">
+                            <span>TÉRMINOS Y CONDICIONES</span>
+                        </div>
+                    </div>
+
+                    <div class="txt-normal-mobil">
+                        <span>Te damos la bienvenida a "Motor Rider", el emocionante juego de carreras. Al acceder y utilizar nuestro juego, aceptas los siguientes términos y condiciones. Por favor, léelos cuidadosamente antes de jugar.
+                            Licencia Limitada: Concedemos a los usuarios una licencia no exclusiva, intransferible y revocable para utilizar "Motor Rider" de acuerdo con estos términos y condiciones.<br><br>
+                            Restricciones: No puedes copiar, modificar, distribuir, vender, alquilar ni realizar ingeniería inversa sobre "Motor Rider" o cualquier parte de su contenido sin nuestro consentimiento expreso por escrito.
+                            Edad Mínima: Debes tener al menos 13 años para utilizar "Motor Rider". Si eres menor de 13 años, necesitas el consentimiento de tus padres o tutores para jugar.
+                            Conducta Adecuada: No debes participar en conductas que violen la ley, los derechos de propiedad intelectual, la privacidad o estos términos y condiciones mientras utilices "Motor Rider".<br><br>
+                            Propiedad del Contenido: Cualquier contenido que crees mientras utilizas "Motor Rider" sigue siendo tu propiedad, pero nos concedes una licencia para utilizar, mostrar y distribuir dicho contenido en relación con el juego.
+                            Contenido Inapropiado: No puedes cargar, compartir ni crear contenido que sea ilegal, ofensivo, difamatorio, obsceno, amenazante, invasivo de la privacidad o que viole los derechos de propiedad intelectual.
+                            Actualizaciones del Juego: Nos reservamos el derecho de realizar actualizaciones y cambios en "Motor Rider" en cualquier momento sin previo aviso. Estás de acuerdo en instalar dichas actualizaciones para continuar utilizando el juego.<br><br>
+                            Uso bajo tu Propio Riesgo: Utilizas "Motor Rider" bajo tu propio riesgo. No nos hacemos responsables de pérdidas, daños o perjuicios derivados del uso del juego.
+                            Interrupciones y Errores: No garantizamos que "Motor Rider" esté libre de interrupciones, errores o defectos, ni que todos los errores serán corregidos.
+                            Nos reservamos el derecho de suspender o dar por terminado tu acceso a "Motor Rider" en caso de incumplimiento de estos términos y condiciones.<br><br>
+                            Nos reservamos el derecho de actualizar estos términos y condiciones en cualquier momento. Te notificaremos sobre cambios significativos. Al continuar utilizando "Motor Rider" después de dichas modificaciones, aceptas los términos actualizados.
+                            Si tienes preguntas o inquietudes sobre estos términos y condiciones, puedes ponerte en contacto con nosotros en [correo electrónico de contacto].
+                            Gracias por elegir "Motor Rider". ¡Que tengas una experiencia de juego emocionante!</span><br><br><br><br>
+                    </div>
+
+                </div>
+
+                    
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+                
+            </mat-drawer-container>
+            <!-- Se cierra el sidebar -->
+        </div>
+    </ng-template>
+
+</section>

@@ -1,0 +1,125 @@
+<section class="bases-promocion">
+    <ng-container *ngIf="isMobile(); else isDesktop">
+        <div class="wrapper">
+            <mat-drawer-container>
+                <mat-drawer #drawer mode='over' position="start">
+                    <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+                </mat-drawer>
+                <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+                <div class="body-look">
+                    <div class="eslogan">
+                        <div class="line-color">
+                            <div class="vertical-line" style="height: 111px;"></div>
+                        </div>
+                        <div class="title-link">
+                            <span>NUEVO LOOK</span>
+                        </div>
+                    </div>
+
+                    <div class="txt-normal-mobil">
+                        <span>¿Quieres tener una idea de cómo verías si usarás unos increíbles Carrera Ducati?</span><br><br><br><br>
+        
+                    </div>
+
+                    <div class="menu-lentes">
+                        <img src="/assets/images/lentes-ducati-1.png" class="img-lentes">
+                        <span class="txt-bold-mobil">CARDUC 001/S</span><br><br><br><br>
+
+                        <img src="/assets/images/lentes-ducati-2.png" class="img-lentes">
+                        <span class="txt-bold-mobil">CARDUC 002/S</span><br><br><br><br>
+
+                        <img src="/assets/images/lentes-ducati-3.png" class="img-lentes">
+                        <span class="txt-bold-mobil">CARDUC 003/S</span><br><br><br><br>
+                    </div>
+
+                    <div class="centrado">
+                        <div class="botones">
+                            <button mat-flat-button color="white" class="btn-omitir" (click)="omitir()">
+                                <span class="text-btn-omitir">OMITIR</span>
+                            </button>
+                            <button mat-flat-button color="warn" class="btn-jugar" (click)="usarLentes()"> 
+                                <span class="text-btn-jugar">USAR LENTES</span>
+                            </button>
+                        </div><br><br><br>
+                    </div>
+
+                    
+                    <div class="footer">
+                        <div class="Licencia">
+                            <span class="text-licencia"> Ducati Motor Holding S.p.A. Official Licensed Product</span>
+                        </div>
+                        <app-footer-app></app-footer-app>
+                    </div>
+                </div>
+                
+            </mat-drawer-container>
+            <!-- Se cierra el sidebar -->
+        </div>
+    </ng-container>
+
+    <ng-template #isDesktop>
+        <div class="wrapper">
+            <mat-drawer-container>
+                <mat-drawer #drawer mode='over' position="start">
+                    <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+                </mat-drawer>
+                <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+                <div class="auxiliar">
+                    <div class="body-look-desk">
+                        <div class="eslogan">
+                            <div class="line-color">
+                                <div class="vertical-line" style="height: 111px;"></div>
+                            </div>
+                            <div class="title-link">
+                                <span>NUEVO LOOK</span>
+                            </div>
+                        </div>
+
+                        <div class="txt-normal-mobil">
+                            <span>¿Quieres tener una idea de cómo verías si usarás unos increíbles Carrera Ducati?</span><br><br><br><br><br>
+            
+                        </div>
+
+                        <div class="menu-lentes-desk">
+                            <img src="/assets/images/lentes-ducati-1.png" class="img-lentes">
+                            <img src="/assets/images/lentes-ducati-2.png" class="img-lentes">
+                            <img src="/assets/images/lentes-ducati-3.png" class="img-lentes">
+                            
+                        </div>
+
+                        <div class="menu-lentes-desk">
+                            <span class="txt-bold-mobil">CARDUC 001/S</span><br><br><br><br>
+                            <span class="txt-bold-mobil">CARDUC 002/S</span><br><br><br><br>
+                            <span class="txt-bold-mobil">CARDUC 003/S</span><br><br><br><br>
+                        </div><br><br><br>
+
+                        <div class="centrado-desk">
+                            <div class="botones">
+                                <button mat-flat-button color="white" class="btn-omitir" (click)="omitir()">
+                                    <span class="text-btn-omitir">OMITIR</span>
+                                </button>
+                                <mat-icon class="icon-menu">dehaze</mat-icon>
+                                <button mat-flat-button color="warn" class="btn-jugar" (click)="usarLentes()">
+                                    <span class="text-btn-jugar">USAR LENTES</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    </div>
+                    <div class="footer">
+                        <div class="Licencia">
+                            <span class="text-licencia"> Ducati Motor Holding S.p.A. Official Licensed Product</span>
+                        </div>
+                        <app-footer-app></app-footer-app>
+                    </div>
+                
+            </mat-drawer-container>
+            <!-- Se cierra el sidebar -->
+        </div>
+    </ng-template>
+
+</section>
